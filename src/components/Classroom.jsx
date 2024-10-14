@@ -10,8 +10,9 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { Phone } from "./Phone";
 import { Laptop } from "./Laptop";
+import { VR } from "./VR";
 
-export function Classroom(props) {
+export function Classroom({ currentScreen, ...props }) {
   const { nodes, materials } = useGLTF("/models/classroom.glb");
 
   return (
@@ -43,15 +44,6 @@ export function Classroom(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.light_rays_effects_0.geometry}
-        material={materials.effects}
-        position={[-2.56, -1.921, -4.868]}
-        rotation={[0, 0.002, 0.869]}
-        scale={[1.26, 2.347, 1]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.board1001_posters_0.geometry}
         material={materials.posters}
         position={[4.2, 2.106, -7.918]}
@@ -59,10 +51,16 @@ export function Classroom(props) {
       />
       <Phone
         scale={0.2}
-        position={[-2.0, 0.9, -2.1]}
+        position={[-2.0, 0.85, -2.1]}
         rotation={[-1.6, 3.2, 0]}
+        currentScreen={currentScreen}
       />
-      <Laptop position={[3.5, 0.9, -2.3]} scale={0.2} />
+      <Laptop
+        position={[3.5, 0.9, -2.3]}
+        scale={0.2}
+        currentScreen={currentScreen}
+      />
+      <VR position={[-2.1, 0.9, 5]} scale={0.3} rotation={[0, 0.8, 0]} />
     </group>
   );
 }

@@ -108,7 +108,7 @@ function App() {
             makeDefault
             lookAt={cameraTargetRef}
           />
-          <Experience />
+          <Experience currentScreen={currentScreen} />
         </SheetProvider>
       </Canvas>
     </>

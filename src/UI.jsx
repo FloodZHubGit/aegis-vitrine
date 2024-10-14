@@ -113,7 +113,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
               {screen === "Laptop" &&
                 "L'extension web Aegis vous offre une protection complète sur vos navigateurs Chrome, Firefox et Edge. Soyez protégé en toutes circonstances sur vos réseaux sociaux préférés."}
               {screen === "Formation" &&
-                "La formation Aegis vous permet d'apprendre les risques des réseaux sociaux et comment les éviter. Cette formation de groupe peut être dispensée par un professeur dans votre établissement scolaire ou bien par un formateur dans votre entreprise."}
+                "La formation Aegis vous permet d'apprendre les risques des réseaux sociaux et comment les éviter. Cette formation interactive en groupe peut être dispensée par un professeur dans votre établissement scolaire ou bien par un formateur dans votre entreprise."}
               {screen === "VR" &&
                 "L'expérience VR Aegis vous plonge dans un monde virtuel où vous devez protéger votre identité numérique. Cette expérience est à réaliser en binôme et est disponible sur les casques de réalité virtuelle Oculus Quest et HTC Vive."}
             </motion.p>
