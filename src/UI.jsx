@@ -22,7 +22,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="bg-black bg-opacity-50 p-4 rounded-lg flex flex-col items-center">
+        <div className="bg-white bg-opacity-10 backdrop-blur-md p-4 mb-4 rounded-lg flex flex-col items-center">
           <motion.img
             src="/aegis_logo.svg"
             alt="Aegis Logo"
