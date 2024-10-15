@@ -35,7 +35,9 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
             },
           }}
         />
-        <h1 className="text-7xl opacity-90 font-extrabold mb-2">AEGIS</h1>
+        <h1 className="text-7xl opacity-90 font-extrabold mb-2 bg-black bg-opacity-50 p-4 rounded-lg">
+          AEGIS
+        </h1>
         <h2 className="text-2xl opacity-80 mb-10">
           Apprenez à utiliser les réseaux
         </h2>
