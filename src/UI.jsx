@@ -25,7 +25,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
         <motion.img
           src="/aegis_logo.svg"
           alt="Aegis Logo"
-          className="w-32 mb-4"
+          className="w-32 mb-4 bg-black bg-opacity-50 p-4 rounded-lg"
           initial={{ y: -80, opacity: 0 }}
           variants={{
             Home: {
@@ -38,7 +38,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
         <h1 className="text-7xl opacity-90 font-extrabold mb-2 bg-black bg-opacity-50 p-4 rounded-lg">
           AEGIS
         </h1>
-        <h2 className="text-2xl opacity-80 mb-10">
+        <h2 className="text-2xl opacity-80 mb-10 bg-black bg-opacity-50 p-4 rounded-lg">
           Apprenez à utiliser les réseaux
         </h2>
         <motion.div
