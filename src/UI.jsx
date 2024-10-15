@@ -22,25 +22,25 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <motion.img
-          src="/aegis_logo.svg"
-          alt="Aegis Logo"
-          className="w-32 mb-4 bg-black bg-opacity-50 p-4 rounded-lg"
-          initial={{ y: -80, opacity: 0 }}
-          variants={{
-            Home: {
-              y: 0,
-              opacity: 0.9,
-              transition: { delay: 1, duration: 1.2 },
-            },
-          }}
-        />
-        <h1 className="text-7xl opacity-90 font-extrabold mb-2 bg-black bg-opacity-50 p-4 rounded-lg">
-          AEGIS
-        </h1>
-        <h2 className="text-2xl opacity-80 mb-10 bg-black bg-opacity-50 p-4 rounded-lg">
-          Apprenez à utiliser les réseaux
-        </h2>
+        <div className="bg-black bg-opacity-50 p-4 rounded-lg flex flex-col items-center">
+          <motion.img
+            src="/aegis_logo.svg"
+            alt="Aegis Logo"
+            className="w-32 mb-4"
+            initial={{ y: -80, opacity: 0 }}
+            variants={{
+              Home: {
+                y: 0,
+                opacity: 0.9,
+                transition: { delay: 1, duration: 1.2 },
+              },
+            }}
+          />
+          <h1 className="text-7xl opacity-90 font-extrabold mb-2">AEGIS</h1>
+          <h2 className="text-2xl opacity-80 mb-10">
+            Apprenez à utiliser les réseaux
+          </h2>
+        </div>
         <motion.div
           className="flex flex-wrap justify-center gap-4"
           initial={{ y: 80, opacity: 0 }}
