@@ -117,7 +117,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
               {screen === "Formation" &&
                 "La formation Aegis vous permet d'apprendre les risques des réseaux sociaux et comment les éviter. Cette formation interactive en groupe peut être dispensée par un professeur dans votre établissement scolaire ou bien par un formateur dans votre entreprise."}
               {screen === "VR" &&
-                "L'expérience VR Aegis vous plonge dans un monde virtuel où vous devez protéger votre identité numérique. Cette expérience est à réaliser en binôme et est disponible sur les casques de réalité virtuelle Oculus Quest et HTC Vive."}
+                "L'expérience VR Aegis vous plonge dans un monde virtuel où vous devez trouver les fakes news. Cette expérience est à réaliser en binôme et est disponible sur les casques de réalité virtuelle Oculus Quest et HTC Vive."}
             </motion.p>
             <motion.div
               className="flex gap-4"
@@ -150,7 +150,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
               )}
               {screen === "Laptop" && (
                 <a
-                  href="https://example.com/download-extension"
+                  href="https://github.com/rydward/Extension_iA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-500 bg-opacity-70 p-3 rounded-lg text-white font-medium flex items-center gap-2 hover:bg-opacity-80 transition-colors"
@@ -161,7 +161,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
               )}
               {screen === "Formation" && (
                 <a
-                  href="https://example.com/visit-formation"
+                  href="https://aegis-formation.floodz.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-purple-500 bg-opacity-70 p-3 rounded-lg text-white font-medium flex items-center gap-2 hover:bg-opacity-80 transition-colors"
@@ -172,7 +172,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
               )}
               {screen === "VR" && (
                 <a
-                  href="https://example.com/visit-vr"
+                  href="https://aegis-vr.floodz.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-red-500 bg-opacity-70 p-3 rounded-lg text-white font-medium flex items-center gap-2 hover:bg-opacity-80 transition-colors"
