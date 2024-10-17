@@ -69,13 +69,12 @@ export function Laptop({ currentScreen, ...props }) {
           occlude
         >
           <iframe
-            src="https://www.teamaegis.fr/"
-            style={{
-              width: "1000px",
-              height: "600px",
-              border: "none",
-            }}
-          />
+            width="1000"
+            height="600"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=LJZANLCN7cLhWiei&autoplay=1"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
         </Html>
       )}
     </group>

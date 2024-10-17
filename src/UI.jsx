@@ -22,9 +22,9 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="bg-white bg-opacity-10 backdrop-blur-md p-4 mb-4 rounded-lg flex flex-col items-center">
+        <div className="bg-black bg-opacity-50 backdrop-blur-md p-4 mb-4 rounded-lg flex flex-col items-center">
           <motion.img
-            src="/aegis_logo.svg"
+            src="/aegis_logo.png"
             alt="Aegis Logo"
             className="w-32 mb-4"
             initial={{ y: -80, opacity: 0 }}
@@ -61,7 +61,7 @@ export const UI = ({ currentScreen, onScreenChange, isAnimating }) => {
             <button
               key={name}
               onClick={() => onScreenChange(name)}
-              className="bg-white bg-opacity-10 backdrop-blur-md p-4 rounded-lg text-white font-medium flex items-center gap-2 hover:bg-opacity-20 transition-colors"
+              className="bg-black bg-opacity-50 backdrop-blur-md p-4 rounded-lg text-white font-medium flex items-center gap-2 hover:bg-opacity-70 transition-colors"
             >
               <Icon size={24} />
               {label}

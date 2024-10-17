@@ -84,7 +84,7 @@ function App() {
         onScreenChange={setTargetScreen}
         isAnimating={currentScreen !== targetScreen}
       />
-      <Canvas shadows gl={{ preserveDrawingBuffer: true }}>
+      <Canvas shadows gl={{ preserveDrawingBuffer: true }} color="blue">
         <SoftShadows />
         <SheetProvider sheet={mainSheet}>
           <e.mesh

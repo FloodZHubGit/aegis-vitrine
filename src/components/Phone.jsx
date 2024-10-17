@@ -210,13 +210,15 @@ export function Phone({ currentScreen, ...props }) {
           transform
         >
           <iframe
-            src="https://www.teamaegis.fr/"
-            style={{
-              width: "300px",
-              height: "640px",
-              borderRadius: "20px",
-            }}
-          />
+            width="300"
+            height="640"
+            src="https://youtube.com/embed/NlxYY7w1UGU?si=EXCZ9okl5pDozHDfU&autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </Html>
       )}
     </group>
